@@ -5,13 +5,13 @@ import logo from "../public/logo.png";
 
 export default function Navbar() {
   const link = [
-    { label: "Profile", path: "profile" },
-    { label: "Akademik", path: "profile" },
-    { label: "Penelitian", path: "penelitian" },
-    { label: "Pengabdian", path: "pengabdian" },
-    { label: "Lemabaga", path: "lemabaga" },
-    { label: "Pengumuman", path: "pengumuman" },
-    { label: "Pendaftaran", path: "pendaftaran" },
+    { id: 1, label: "Profile", path: "profile" },
+    { id: 2, label: "Akademik", path: "profile" },
+    { id: 3, label: "Penelitian", path: "penelitian" },
+    { id: 4, label: "Pengabdian", path: "pengabdian" },
+    { id: 5, label: "Lemabaga", path: "lemabaga" },
+    { id: 6, label: "Pengumuman", path: "pengumuman" },
+    { id: 7, label: "Pendaftaran", path: "pendaftaran" },
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function Navbar() {
         </div>
         <ul className="flex justify-between space-x-7">
           {link.map((d) => (
-            <Link href={d.path}>
+            <Link href={d.path} key={d.id}>
               <li className="font-semibold hover:cursor-pointer hover:text-main-500">
                 <a>{d.label}</a>
               </li>
