@@ -6,7 +6,6 @@ export const BlogCard = () => {
       <img
         src="./mision.jpg"
         alt=""
-        srcset=""
         className="group-hover:scale-110 transition duration-300 rounded-lg"
       />
       <div className="p-4">

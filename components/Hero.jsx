@@ -43,7 +43,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex flex-col justify-center">
-          <Image src={hero} alt="" srcset="" />
+          <Image src={hero} alt="" />
           {/* <Image src={university} /> */}
         </div>
       </div>
