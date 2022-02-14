@@ -20,7 +20,7 @@ const Team = () => {
             />
             <div className="w-full rounded-md bg-white/40 backdrop-blur-xl p-2 text-center -translate-y-3">
               <h1 className="text-center font-semibold">
-                M sya'rani machrizzandi{" "}
+                M sya&apos;rani machrizzandi{" "}
               </h1>
               <p>Ketua Yayasan</p>
             </div>
@@ -32,7 +32,7 @@ const Team = () => {
             />
             <div className="w-full rounded-md bg-white/40 backdrop-blur-xl p-2 text-center -translate-y-3">
               <h1 className="text-center font-semibold">
-                M sya'rani machrizzandi{" "}
+                M sya&apos;rani machrizzandi{" "}
               </h1>
               <p>Ketua Yayasan</p>
             </div>
@@ -44,7 +44,7 @@ const Team = () => {
             />
             <div className="w-full rounded-md bg-white/40 backdrop-blur-xl p-2 text-center -translate-y-3">
               <h1 className="text-center font-semibold">
-                M sya'rani machrizzandi{" "}
+                M sya&apos;rani machrizzandi{" "}
               </h1>
               <p>Ketua Yayasan</p>
             </div>
