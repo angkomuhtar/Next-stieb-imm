@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full z-20 bg-main-200">
+    <nav className="fixed w-full z-20 bg-teal-300/30 backdrop-blur-xl">
       <div className="container flex justify-between items-center py-6">
         <div className="flex space-x-3 items-center">
           <img src="./logo.png" className="h-10" />
@@ -30,7 +30,7 @@ export default function Navbar() {
           {link.map((d) => (
             <Link href={d.path} key={d.id}>
               <li className="font-semibold hover:cursor-pointer hover:text-main-500">
-                <a>{d.label}</a>
+                <a className="">{d.label}</a>
               </li>
             </Link>
           ))}
