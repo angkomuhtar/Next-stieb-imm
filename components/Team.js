@@ -1,54 +1,45 @@
 import { ContainerTitle } from "./ContainerTitle";
+import TeamCard from "./TeamCard";
 
 const Team = () => {
+  const data = [
+    {
+      name: "Nurul Awainah, S.Farm., M.Si.",
+      position: "Ketua STIEB",
+      image: "/people.png",
+    },
+    {
+      name: "K.H. Muh. Syibli Sahabuddin, M.A.",
+      position: "Pembina Yayasan",
+      image: "/pimpinan/pimpinan2.png",
+    },
+    {
+      name: "Muh. Muzani Zulmaizar, S.Si., M.Pd.",
+      position: "Ketua Yayasan",
+      image: "/pimpinan/pimpinan1.png",
+    },
+  ];
+
   return (
-    <div className="bg-main-700">
-      <div className="container max-w-3xl py-20">
-        <div className="flex justify-center">
+    <div className='bg-white'>
+      <div className='container max-w-5xl py-20'>
+        <div className='flex justify-center'>
           <ContainerTitle
-            className="max-w-2xl text-center"
-            title="Pimpinan Perguruan"
-            Subtitle="saat ini secara simultan selalu berusaha menjadi salah satu universitas riset atau institusi akademik terkemuka di dunia."
-            titleClass="text-white"
+            className='max-w-2xl text-center'
+            title='Pimpinan Perguruan'
+            Subtitle='saat ini secara simultan selalu berusaha menjadi salah satu universitas riset atau institusi akademik terkemuka di dunia.'
+            titleClass='text-white'
           />
         </div>
-        <div className="grid grid-cols-3 gap-8">
-          <div className="roundee-md">
-            <img
-              src="/people.png"
-              className="aspect-[3/4] object-cover object-bottom"
+        <div className='grid grid-cols-3 gap-6'>
+          {data.map((data, key) => (
+            <TeamCard
+              key={key}
+              img={data.image}
+              name={data.name}
+              position={data.position}
             />
-            <div className="w-full rounded-md bg-white/40 backdrop-blur-xl p-2 text-center -translate-y-3">
-              <h1 className="text-center font-semibold">
-                M sya&apos;rani machrizzandi{" "}
-              </h1>
-              <p>Ketua Yayasan</p>
-            </div>
-          </div>
-          <div className="roundee-md">
-            <img
-              src="/people.png"
-              className="aspect-[3/4] object-cover object-bottom"
-            />
-            <div className="w-full rounded-md bg-white/40 backdrop-blur-xl p-2 text-center -translate-y-3">
-              <h1 className="text-center font-semibold">
-                M sya&apos;rani machrizzandi{" "}
-              </h1>
-              <p>Ketua Yayasan</p>
-            </div>
-          </div>
-          <div className="roundee-md">
-            <img
-              src="/people.png"
-              className="aspect-[3/4] object-cover object-bottom"
-            />
-            <div className="w-full rounded-md bg-white/40 backdrop-blur-xl p-2 text-center -translate-y-3">
-              <h1 className="text-center font-semibold">
-                M sya&apos;rani machrizzandi{" "}
-              </h1>
-              <p>Ketua Yayasan</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

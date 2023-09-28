@@ -1,4 +1,5 @@
 import { CardServices } from "./CardServices";
+import { CardServices2 } from "./CardServices2";
 import { ContainerTitle } from "./ContainerTitle";
 
 const Services = () => {
@@ -28,10 +29,13 @@ const Services = () => {
       <div className='grid grid-cols-3 gap-4'>
         {services.map((data, i) => (
           <>
-            <CardServices
+            <CardServices2
               title={data.title}
               img={`./services/icon-hitam-0${i + 1}.svg`}
-              detail={data.detail}
+              details={
+                data?.detail ||
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, perferendis voluptates incidunt velit assumenda ipsum."
+              }
             />
           </>
         ))}
