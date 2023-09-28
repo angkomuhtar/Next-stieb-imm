@@ -6,7 +6,7 @@ const Team = () => {
     {
       name: "Nurul Awainah, S.Farm., M.Si.",
       position: "Ketua STIEB",
-      image: "/people.png",
+      image: "pimpinan/pimpinan.png",
     },
     {
       name: "K.H. Muh. Syibli Sahabuddin, M.A.",

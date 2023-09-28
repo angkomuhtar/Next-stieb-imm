@@ -11,12 +11,29 @@ const Services = () => {
     },
     {
       title: "Kerjasama",
-      detail: "Memiliki relasi Kerja Baik BUMN Maupun Industri/Perusahaan ",
+      detail:
+        "Memiliki relasi Kerja dengan berbagai Industri/Perusahaan Baik BUMN Maupun Swasta",
     },
-    { title: "Fasilitas Pendidikan" },
-    { title: "Program Study" },
-    { title: "Program Unggulan" },
-    { title: "Program Beasiswa" },
+    {
+      title: "Fasilitas Pendidikan",
+      detail:
+        "Menawarkan Fasilitas Penunjang Pembelajaran seperti Ruangan ber-AC, LCD Projector, dan Perpustakaan",
+    },
+    {
+      title: "Program Study",
+      detail:
+        "Program Study Manajemen dengan konsentrasi Keuangan dan Perbankan, Administrasi Bisnis, Manajemen Perkantoran, dan Pariwisata",
+    },
+    {
+      title: "Program Unggulan",
+      detail:
+        "Menawarkan Program Unggulan Meliputi KKP/Magang dan Pelatihan Kompetensi dari relasi BUMN dan Industri",
+    },
+    {
+      title: "Program Beasiswa",
+      detail:
+        "Menyediakan Beasiswa dalam Upaya Mendukung Mahasiswa yang Meliputi Beasiswa Berprestasi, KIP, dan Bagi yang kurang Mampu",
+    },
   ];
 
   return (
