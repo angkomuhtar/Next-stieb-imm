@@ -41,6 +41,7 @@ export default function Hero() {
             <a
               href='https://docs.google.com/forms/d/1wcZKoRkfsXPq0naY86LPc8PT2VI8QZXUZJbFfE90gf4/viewform?edit_requested=true#settings'
               target='_blank'
+              rel='noreferrer'
               type='button'
               className='py-2 px-4 text-md font-bold bg-main-500 border text-white rounded-full mt-8 hover:bg-white hover:text-main-500 hover:border-main-500'>
               Daftar Sekarang
